@@ -3,14 +3,17 @@ Checks to see if PlayStation 5 is in stock using Python and Selenium
 
 In order to use this script, you must have Google Chrome and Selenium installed
 It is possible to use other browsers as well, but modifications must be made to the code.
+
 If you are using chrome make sure the exe file is at path: "C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\Application\chrome.exe"
 
 To install selenium, use pip install selenium
+
 (If you don't have pip, install that first -  There are tonnes of tutorials online)
 
 Next you will need chromedriver.exe (or other browser's selenium driver file) - https://chromedriver.chromium.org/
 
 Once you have done this, point the code to your chromedriver installation (Line18) 
+
 Ex: driver = webdriver.Chrome(r'C:\Drivers\chromedriver.exe')
 
 Next, change the URL for Amazon to a different product or leave it as ks, if you are trying to use it for PS5 (Line21)
