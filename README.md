@@ -26,5 +26,5 @@ You can make it faster or slower.
 This code can work on other browser; you would have to download the new selenium browser drivers and point them to the code. You would also have to make sure you save the 
 browser's executable file to the default location that Selenium will look for it at.
 
-This code can also work on different websites. YOu would have to input the new URL in line 18 and you would have to find the xpath for the buy now and purchase now links 
+This code can also work on different websites. You would have to input the new URL in line 18 and you would have to find the xpath for the buy now and purchase now links 
 on that website. Different websites might also have different procedures to buy a product, so keep that in mind. Ex: Sign in, Add to Cart, Buy Now
