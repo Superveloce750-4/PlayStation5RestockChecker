@@ -18,10 +18,12 @@ Ex: driver = webdriver.Chrome(r'C:\Drivers\chromedriver.exe')
 
 Next, change the URL for Amazon to a different product or leave it as ks, if you are trying to use it for PS5 (Line21)
 
-Finally, you may want to change the value that the variable x is equal to
+Next, you may want to change the value that the variable x is equal to
 X represents the time taken that Selenium will pause before starting a new action
 This is done to simulate a real human's interaction with the website, so that you do not get banned from using Amazon (or any other website you use bots on)
 You can make it faster or slower.
+
+Finally, enter the username you use to sign into Amazon and your password in lines 29 & 30
 
 This code can work on other browser; you would have to download the new selenium browser drivers and point them to the code. You would also have to make sure you save the 
 browser's executable file to the default location that Selenium will look for it at.
