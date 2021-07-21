@@ -11,16 +11,13 @@ from selenium.webdriver import Chrome
 with Chrome() as driver:
     from selenium import webdriver
     from selenium.webdriver.common.keys import Keys
-    from selenium.webdriver.common.action_chains import ActionChains ##Maybe
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.support import expected_conditions as EC
     import time
-    import random
-    from random import randint, randrange
+    from random import randint
 
     driver = webdriver.Chrome(r'C:\Drivers\chromedriver.exe')
 
+    AMAZON_TEST_URL = 'https://www.amazon.com/dp/B096LZFF6Z/ref=pe_825000_114212990_TE_FOCE_n_id'
     AMAZON_URL = 'https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG/ref=sr_1_1?dchild=1&keywords=playstation+5&qid=1605750925&rnid=2941120011&s=videogames&sr=1-1'
     # let x be the delay time taken to simulate real human
     x = 5
@@ -59,7 +56,7 @@ with Chrome() as driver:
         def findProduct(self):
             """ Finds the product with global link. """
             driver = self.driver
-            driver.get('AMAZON_URL')
+            driver.get(AMAZON_URL)
             time.sleep(randint(int(x/2), x))
             
             ## If the product is not available, wait until it is available
